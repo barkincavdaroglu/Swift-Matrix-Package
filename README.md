@@ -1,1 +1,3 @@
-# Swift-Matrix-Package
+# Matrix Package
+
+A description of this package.
