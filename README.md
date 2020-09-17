@@ -6,7 +6,7 @@ Swift package for matrix operations.
 You can install using Swift Package Manager.
 
 ## Currently supported:
-[1. Matrix Struct (all basicc operations included)](#Matrix-Structure)\
+[1. Matrix Struct](#Matrix-Structure)\
 [2. QR Algorithm for finding Eigenvalues, Diagonalization](#QR-Algorithm)\
 [3. Cholesky Decomposition](#Cholesky-Decomposition)\
 [4. LU Decomposition](#lu-decomposition)\
