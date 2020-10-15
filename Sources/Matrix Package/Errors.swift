@@ -17,6 +17,7 @@ public enum ComplexEigenvalue: Error {
     case eigenvalueComplex
 }
 
+//Using it for my QR algorithm. Otherwise users can get complex eigenvalues using the QR_Algorithm extension of the matrix
 extension ComplexEigenvalue: LocalizedError {
     public var errorDescription: String? {
         switch self {
