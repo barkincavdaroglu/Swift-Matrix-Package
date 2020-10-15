@@ -114,7 +114,7 @@ public struct Matrix {
         }
     }
     
-    
+    //Get the element at row i column j
     public subscript(row: Int, column: Int) -> __CLPK_doublereal {
         get {
             return self.matrix[(row*self.column) + column]
@@ -124,6 +124,7 @@ public struct Matrix {
         }
     }
     
+    //Get-set the ith row of the the matrix
     public subscript(row: Int, column: Int? = nil) -> [__CLPK_doublereal] {
         get {
             return Array(self.matrix[row*self.column..<(row*self.column)+self.column])
@@ -135,6 +136,8 @@ public struct Matrix {
         }
     }
     
+    //Get-set the jth column of the matrix
+    //Set needs work
     public subscript(row: Int? = nil, column: Int) -> [__CLPK_doublereal] {
         get {
             var col = [Double]()
