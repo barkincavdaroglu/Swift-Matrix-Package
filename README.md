@@ -40,6 +40,8 @@ let matrix = Matrix(matrixType: MatrixFill, row: Int, column: Int)
 ```
 Initializes either a matrix of 0s or a matrix of 1s, depending on MatrixFill (set the parameter to MatrixFill.Matrix0s if you want 0s matrix or MatrixFill.Matrix1s if you want 1s matrix) with dimensions row x column.
 
+You can append a row and column to an existing matrix by using appendRow(row: [Double]) and appendCol(column: [Double]).
+
 
 ### QR Algorithm
 QR for matrix struct in the example below executed in approximately 0.006657004356384277 seconds, compared to 0.011546015739440918 for 2D arrays
