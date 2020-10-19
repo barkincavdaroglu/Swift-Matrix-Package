@@ -175,7 +175,7 @@ You can generate identity matrix
 
 All the other methods listed initially will be compatible with the matrix struct as soon as I finish them.
 
-## If you don't want to use Matrix Struct (i.e. you already have your data in 2D arrays), same methods exist for 2D arrays too
+## If you don't want to use Matrix Struct, same methods exist for 2D arrays too
 
 ### LUP Decomposition
 Use LUP to invert matrices, find determinants and solve linear equations in the form Ax = b. LUP Decomposition has 2 "main" methods that are almost exactly the same. One of them (LUP_DecompositionD()) returns the decomposed version of LU, whereas the other (LUP_DecompositionC()) modifies the input matrix in place. This is because inverting matrices through LUP requires the composite version of the matrix whereas solving linear equations requires the decomposed (L, U, P) version.
