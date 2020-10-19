@@ -18,7 +18,7 @@ You can install using Swift Package Manager.
 10. Vector Operations
     
 # Matrix Structure
-There are 2 "data structures" that you can use in calling the operations listed above. First one is standard 2D Array where each array represents a row of matrix. And second one is Matrix struct, 1D array that is more efficient than 2D. Currently, there are 4 ways to initialize Matrix:
+There are 2 data structures that you can use for the operations listed above. First one is standard 2D Array where each array represents a row of matrix. And second one is Matrix struct, 1D array that is more efficient than 2D. Currently, there are 4 ways to initialize Matrix:
 
 ```
 let matrix = Matrix(values: [Double])
