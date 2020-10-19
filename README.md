@@ -246,7 +246,7 @@ do {
 You don't need to check if your matrix is symmetric. Initialization will throw notSymmetric error along with localized description if its not.
 
 ### Standalone Householder Transformation
-Used to convert a matrix to tridiagonal form. The resulting matrix will not be tridiagonal unless the input matrix is not symmetric.
+Used to convert a matrix to tridiagonal form. The resulting matrix will not be tridiagonal unless the input matrix is symmetric.
 
 ```
 let matrix = [[4.0, 1.0, -2.0, 2.0], [1.0, 2.0, 0.0, 1.0], [-2.0, 0.0, 3.0, -2.0], [2.0, 1.0, -2.0, -1.0]] 
