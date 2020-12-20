@@ -36,7 +36,7 @@ let matrix = Matrix()
 Initializes with empty array and sets row and column equal to 0.
 
 ```
-let matrix = Matrix(matrixType: MatrixFill, row: Int, column: Int)
+let matrix = Matrix(matrixType: MatrixFill.Matrix1s, row: Int, column: Int)
 ```
 Initializes either a matrix of 0s or a matrix of 1s, depending on MatrixFill (set the parameter to MatrixFill.Matrix0s if you want 0s matrix or MatrixFill.Matrix1s if you want 1s matrix) with dimensions row x column.
 
