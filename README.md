@@ -217,18 +217,6 @@ lu.findDeterminant() // returns 10.0
 lu.solve(solutionVector: [1.0, 6.0, 4.0]) // returns [1.0, 0.5, -0.5]
 ```
 
-### Eigenvalues for 2x2 and 3x3 Matrices
-QR Algorithm can run forever if the eigenvalues are too close to each other. Currently, algorithm stops running when the eigenvalues found in current iteration divided by those found in previous iteration equals to 1, meaning there is no improvement to be made. If you want a safer (and a more efficient) method for finding eigenvalues for smaller matrices, you can use these:
-
-```
-let matrix = [[1.0, -3.0, 3.0] , [3.0, -5.0, 3.0], [6.0, -6.0, 4.0]]
-let eigenvalues = eigen3(matrix: matrix11)
-// returns [4.0, -2.0]
-let matrix = [[3.42, 8.12], [1.11, 22.4]]
-let eigenvalues = eigen2(matrix: matrix)
-// returns [22.863557153098586, 2.956442846901414]
-```
-
 ### Cholesky Decomposition
 Cholesky decomposes a symmetric real matrix into L (lower triangular) and L<sup>T</sup> (transposed lower triangular, which is upper triangular) matrices, making it easy to solve linear equations and do other calculations. It is considerably faster than LUP in solving linear equations. If you want to receive L and L<sup>T</sup>, use choleskyDecomposition() method after initializing the object with your matrix. If you only want to solve linear equations, use solve(b: [Double]) method after initializing, which returns an array of solutions.
 
